@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Todo List - Lucas Vanz</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Todo List Web App</h1>
+    <form id="task-form">
+      <input type="text" id="task-name" placeholder="Masukkan nama tugas" required>
+      <input type="date" id="task-date" required>
+      <button type="submit">Tambah</button>
+    </form>
+
+    <div class="filter-container">
+      <label for="filter">Filter:</label>
+      <select id="filter">
+        <option value="all">Semua</option>
+        <option value="incomplete">Belum Beres</option>
+        <option value="complete">Sudah Beres</option>
+      </select>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Tugas</th>
+          <th>Tanggal</th>
+          <th>Status</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody id="task-table-body">
+        <tr id="no-data">
+          <td colspan="4">Belum ada tugas</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
